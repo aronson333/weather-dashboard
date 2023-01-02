@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Forecast</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title">Weather Dashboard</h1>
+  </header>
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search for a city</h3>
+        <form id="city-form" class="card-body">
+          <label class="form-label" for="city">City</label>
+          <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="San Diego" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Cities</h3>
+        <div id="cities" class="card-body"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <div class="card">
+        <h2 class="title"> <span id="city-search-term"></span> <img id="icon" src="" alt=""></h2>
+        <ul>
+          <li>Temp: <span id="current-temp"></span></li>
+          <li>Wind: <span id="current-wind"></span></li>
+          <li>Humidity: <span id="current-humidity"></span></li>
+        </ul>
+      </div>
+      
+      <h2 class="subtitle">5 Day Forecast:</h2>
+      <div id="forecast-container" class="list-group"></div>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
