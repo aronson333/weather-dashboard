@@ -4,7 +4,7 @@ var citiesEl = document.querySelector('#cities');
 var forecastContainer = document.querySelector('#forecast-container')
 
 var weatherApi = "https://api.openweathermap.org/data/2.5/forecast"
-var locationApi = "http://api.openweathermap.org/geo/1.0/direct"
+var locationApi = "https://api.openweathermap.org/geo/1.0/direct"
 var API_KEY = '2d95c15461ad10aa37963ba3dd60af0f'
 var searchedCities = localStorage.getItem('cities') || []
 
